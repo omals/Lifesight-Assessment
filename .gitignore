@@ -135,6 +135,16 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.DS_Store
+.idea/
+.vscode/
+
 .env
 .envrc
 .venv
