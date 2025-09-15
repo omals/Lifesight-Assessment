@@ -126,15 +126,29 @@ def standardize_business_df(df: pd.DataFrame) -> pd.DataFrame:
 st.title("Marketing Intelligence Dashboard")
 st.markdown("Load CSVs: `facebook.csv`, `google.csv`, `tiktok.csv`, `business.csv` (place these files in the same folder).")
 
-fb = load_csv_safe("facebook.csv")
-gg = load_csv_safe("google.csv")
-tt = load_csv_safe("tiktok.csv")
-biz = load_csv_safe("business.csv")
+# fb = load_csv_safe("facebook.csv")
+# gg = load_csv_safe("google.csv")
+# tt = load_csv_safe("tiktok.csv")
+# biz = load_csv_safe("business.csv")
 
-# If any file couldn't be loaded, stop and show a warning
-if fb is None or gg is None or tt is None or biz is None:
-    st.warning("One or more CSVs are missing. Please ensure facebook.csv, google.csv, tiktok.csv, and business.csv exist.")
-    st.stop()
+# # If any file couldn't be loaded, stop and show a warning
+# if fb is None or gg is None or tt is None or biz is None:
+#     st.warning("One or more CSVs are missing. Please ensure facebook.csv, google.csv, tiktok.csv, and business.csv exist.")
+#     st.stop()
+
+facebook_file = st.file_uploader("Upload facebook.csv", type=["csv"])
+google_file = st.file_uploader("Upload google.csv", type=["csv"])
+tiktok_file = st.file_uploader("Upload tiktok.csv", type=["csv"])
+business_file = st.file_uploader("Upload business.csv", type=["csv"])
+
+if facebook_file and google_file and tiktok_file and business_file:
+    fb = pd.read_csv(facebook_file)
+    gg = pd.read_csv(google_file)
+    tt = pd.read_csv(tiktok_file)
+    biz = pd.read_csv(business_file)
+    st.success("All CSVs loaded successfully!")
+else:
+    st.warning("Please upload all four CSV files.")
 
 # ----------------------
 # Clean & prepare data
