@@ -14,3 +14,8 @@ This repository contains two end-to-end projects demonstrating applied marketing
 
 ## 📌 Repository Structure
 
+├───.devcontainer
+├───Assessment1
+│   └───Marketing_Intelligence_Dashboard
+├───Assessment2
+    └───Assessment 2 - MMM Weekly.csv
