@@ -124,7 +124,7 @@ def standardize_business_df(df: pd.DataFrame) -> pd.DataFrame:
 # Load files
 # ----------------------
 st.title("Marketing Intelligence Dashboard")
-st.markdown("Load CSVs: `facebook.csv`, `google.csv`, `tiktok.csv`, `business.csv` (place these files in the same folder).")
+# st.markdown("Load CSVs: `facebook.csv`, `google.csv`, `tiktok.csv`, `business.csv` (place these files in the same folder).")
 
 # fb = load_csv_safe("facebook.csv")
 # gg = load_csv_safe("google.csv")

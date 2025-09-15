@@ -26,5 +26,5 @@ Design and host an interactive BI dashboard that connects marketing activity wit
 
 ## 🚀 Run Locally (Streamlit Example)
 ```bash
-cd assessment1_dashboard
-streamlit run dashboard/app.py
+cd .\Assessment1\Marketing_Intelligence_Dashboard\
+streamlit run app.py
