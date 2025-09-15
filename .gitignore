@@ -51,6 +51,12 @@ coverage.xml
 .pytest_cache/
 cover/
 
+#.csv data
+business.csv
+facebook.csv
+google.csv
+tiktok.csv
+
 # Translations
 *.mo
 *.pot
@@ -215,3 +221,5 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+*.zip
