@@ -39,5 +39,5 @@ Build a machine learning model that:
 
 ## 🚀 Run Locally
 ```bash
-cd assessment2_mmm
+cd Assessment2
 jupyter notebook Marketing_MMAssessment_Modeling.ipynb
