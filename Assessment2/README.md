@@ -40,4 +40,4 @@ Build a machine learning model that:
 ## 🚀 Run Locally
 ```bash
 cd assessment2_mmm
-jupyter notebook Marketing_MMM_Assessment_final.ipynb
+jupyter notebook Marketing_MMAssessment_Modeling.ipynb
